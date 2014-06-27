@@ -1,0 +1,17 @@
+	1. Pip install django
+	2. Created new directory structure where I want the code
+	3. Build new project: django-admin.py startproject DjangoSite
+	4. Test project works: manage.py runserver
+	5. Run first database command: manage.py syncdb (created super user)
+	6. Created app where manage.py resides: manage.py startapp polls. This will create models, etc
+	7. Defined the model
+	8. Added new app to settings.py
+	9. To show output of what db script  will look like: manage.py sql polls
+	10. Sync with database: manage.py syncdb
+	11. Make polls accesible/modifiable in the admin GUI, but going to admin.py and adding: admin.site.register(Poll)
+	12. Modify poll/views.py and put in simple view for index
+	13. Add poll/urls.py to map url patterns to view
+	14. Modify root mysite/urls.py and add in our polls.url class
+	15. Added unit tests to tests.py in poll. Few things required for this to work in PyCharm
+		a. Add the python project we're working on to system path. Just add .pth file in site-packages in VirtualEnv
+		b. In Pycharm run configurations, set an Environment Variable DJANGO_SETTINGS_MODULE to mysite.settings
